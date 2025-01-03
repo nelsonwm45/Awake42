@@ -6,6 +6,5 @@ mouse = Controller()
 print("Press Ctrl+C to stop.")
 while True:
     sleep(60)         # Wait for 1 minute
-    current_position = mouse.position
     mouse.move(1, 0)  # Move the mouse slightly
-    mouse.position = current_position  # Reset to original position
+    mouse.move(-1, 0)
