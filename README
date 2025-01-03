@@ -1,0 +1,13 @@
+Created the script to keep your computer awake
+
+Step 1
+
+pip install pynput
+
+Step 2
+
+git clone https://github.com/nelsonwm45/Awake42.git
+
+Step 3
+
+python3 awake.py
