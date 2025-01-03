@@ -1,45 +1,19 @@
-Here's a more polished and professional version of your README file:
+Created the script to keep your computer awake
+⚠️ **Use this script at your own risk.**  
+📌 **Note:** This repository might not be actively maintained.
 
----
+Step 1
 
-# **Awake42: Keep Your Computer Awake**
-
-Awake42 is a simple Python script designed to keep your computer awake by simulating mouse activity at regular intervals.  
-⚠️ **Use this script at your own risk**. This repository may not be actively maintained.
-
----
-
-## **Features**
-- Prevents your computer from going to sleep by simulating mouse movements.
-- Lightweight and easy to use.
-- Requires minimal setup.
-
----
-
-## **Installation and Usage**
-
-### **Step 1: Install Dependencies**
-Ensure you have Python 3 installed. Then, install the required library:
-```bash
 pip install pynput
-```
 
-### **Step 2: Clone the Repository**
-Clone the Awake42 repository to your local machine:
-```bash
+Step 2
+
 git clone https://github.com/nelsonwm45/Awake42.git
-```
 
-### **Step 3: Navigate to the Directory**
-Change to the project directory:
-```bash
-cd Awake42
-```
+Step 3
 
-### **Step 4: Run the Script**
-Run the script to start keeping your computer awake:
-```bash
+Change your directory to that folder by using cd
+
+Step 4
+
 python3 awake.py
-```
-
----
