@@ -10,4 +10,8 @@ git clone https://github.com/nelsonwm45/Awake42.git
 
 Step 3
 
+Change your directory to that folder by using cd
+
+Step 4
+
 python3 awake.py
