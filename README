@@ -16,4 +16,26 @@ Change your directory to that folder by using cd
 
 Step 4
 
-python3 awake.py
+make start
+
+
+Other rules
+
+# Start the program
+make start
+
+# Check if it's running
+make status
+
+# Print the log file contents
+make logs
+
+# Stop the program
+make stop
+
+# Check status again
+make status
+
+# If you have to kill the process manually, do the following
+kill $(cat awake.pid)
+rm awake.pid
