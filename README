@@ -24,7 +24,7 @@ Other rules
 # Start the program
 make start
 
-# Check if it's running
+# Check if it's running && PID of the process
 make status
 
 # Print the log file contents
@@ -32,9 +32,6 @@ make logs
 
 # Stop the program
 make stop
-
-# Check status again
-make status
 
 # If you have to kill the process manually, do the following
 kill $(cat awake.pid)
