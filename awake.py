@@ -1,12 +1,15 @@
-from pynput.mouse import Controller
+from pynput.mouse import Controller as MouseController
+from pynput.keyboard import Controller as KeyboardController
 from time import sleep
 import logging
 import os
+import random
 
 # Set up logging
 logging.basicConfig(filename='awake.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
-mouse = Controller()
+mouse = MouseController()
+keyboard = KeyboardController()
 
 logging.info("Awake script started.")
 
@@ -16,7 +19,25 @@ with open('awake.pid', 'w') as f:
 
 # Main loop
 while True:
-    sleep(60)         # Wait for 1 minute
-    mouse.move(1, 0)  # Move the mouse slightly
-    mouse.move(-1, 0)
-    logging.info("Mouse moved.")
+    sleep(10)
+    
+    # Mouse movement
+    dx = random.randint(5, 20)
+    dy = random.randint(5, 20)
+    if random.choice([True, False]):
+        dx = dx
+    else:
+        dx = -dx
+
+    if random.choice([True, False]):
+        dy = dy
+    else:
+        dy = -dy
+    mouse.move(dx, dy)
+    mouse.move(-dx, -dy)
+    logging.info(f"Mouse moved by ({dx}, {dy}) and returned.")
+
+    # Keyboard press
+    # keyboard.press(Key.f15)
+    # keyboard.release(Key.f15)
+    # logging.info("Pressing f15 key!")
